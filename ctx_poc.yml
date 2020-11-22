@@ -1,0 +1,21 @@
+divs:
+  count: 2
+  each:
+    pitch.root: C
+    pitch.zone: C2
+    divs.each:
+      divs.count: 8
+      divs.all:
+        trigger_note: [1,null,5,3,null,-1,null,4]
+      divs.each:
+        length: 1/8
+  0:
+    divs.count: 4
+    time: 2000
+    divs.each.length: 1/8
+    divs.all.pitch.pattern: [para_minor, major, major_lower, major]
+  1:
+    divs.count: 2
+    divs.each.length: 1/2
+    divs.all.pitch.pattern: [major, major_upper]
+
